@@ -1,4 +1,4 @@
-# A queue is a data model characterized by the term FIFO: First In – First Out.
+# A queue is a data model characterized by the term FIFO (First In – First Out).
 # FIFO is easily exemplify as a line. The first person that enters the line is the first person that leaves the line.
 # So, the first item that is appended in the list is the first item that is popped out of the list.
 
