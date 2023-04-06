@@ -12,6 +12,9 @@ class Queue:
     def get(self):
         return self.__queue.pop(0)
 
+    def get_length(self):
+        return True if len(self.__queue) > 0 else False
+
     def show(self):
         print(f'{self.__queue}')
 
@@ -27,6 +30,9 @@ if __name__ == '__main__':
 
     try:
         for i in range(4):
-            print(queue.get())
+            if queue.get_length():
+                print(queue.get())
+            else:
+                print("Queue empty.")
     except Exception as queue_error:
         print(f'Error: {queue_error}')
